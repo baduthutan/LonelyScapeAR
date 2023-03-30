@@ -69,7 +69,7 @@ struct GameplayView : View {
         
                             Button(
                             action: {
-                                if userInput.lowercased() == "tes" {
+                                if userInput.lowercased() == "cabmen" {
                                     statusString = "Access granted, clue: 1110100"
                                 } else {
                                     statusString = "The keyword does not match."
@@ -314,6 +314,7 @@ struct MainMenu : View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 VStack{
+                    Spacer()
                     Image("LONELYSCAPE")
                         .resizable()
                         .frame(width: 280, height: 30)
@@ -329,6 +330,8 @@ struct MainMenu : View {
                         .foregroundColor(Color.black)
                         .frame(width: 280, height: 70)
                     }
+                    Spacer()
+                    Text("Developed by henshin")
                 }
             }
         }
